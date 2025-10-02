@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwant Bhosle | Data Analyst • Full Stack Developer • ML Enthusiast</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor Animation -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Floating Shapes Background -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-name">Yashwant</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="theme-switch">
+                <input type="checkbox" id="theme-toggle" />
+                <label for="theme-toggle" class="theme-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </label>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Available for opportunities</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Hi, I'm Yashwant Bhosle</span>
+                        <span class="title-role" id="typed-text"></span>
+                        <span class="cursor-blink">|</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        A <span class="gradient-text">Data Analyst</span>, <span class="gradient-text">Full Stack Developer</span> & <span class="gradient-text">ML Enthusiast</span> passionate about building intelligent applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="Yashwant_Bhosle_Resume.pdf" class="btn btn-secondary" download>
+                            <span>Download Resume</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-count="12">0</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-count="3">0</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-count="1">0</h3>
+                            <p>AI Models Deployed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="fade-left">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="window-title">portfolio.js</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span> {
+  <span class="code-keyword">constructor</span>() {
+    <span class="code-keyword">this</span>.skills = {
+      <span class="code-property">webDev</span>: [<span class="code-string">'React'</span>, <span class="code-string">'Node.js'</span>, <span class="code-string">'TypeScript'</span>],
+      <span class="code-property">dataAnalysis</span>: [<span class="code-string">'Python'</span>, <span class="code-string">'SQL'</span>, <span class="code-string">'Tableau'</span>],
+      <span class="code-property">aiml</span>: [<span class="code-string">'TensorFlow'</span>, <span class="code-string">'PyTorch'</span>, <span class="code-string">'Scikit-learn'</span>]
+    };
+    <span class="code-keyword">this</span>.passion = <span class="code-string">'∞'</span>;
+  }
+  
+  <span class="code-method">createAmazingThings</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">'Let\'s build something awesome together!'</span>;
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="icon-bubble" style="--delay: 0s;">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="icon-bubble" style="--delay: 0.5s;">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="icon-bubble" style="--delay: 1s;">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="icon-bubble" style="--delay: 1.5s;">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="icon-bubble" style="--delay: 2s;">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="mouse">
+                <span class="wheel"></span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-number">01.</span>
+                    About Me
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p class="about-intro">
+                        Hello! I'm a developer with a knack for creating efficient, scalable, and user-friendly solutions.
+                    </p>
+                    <p>
+                        My journey in tech started with a fascination for how data could be transformed into meaningful insights, 
+                        which led me down the paths of both <span class="highlight">web development</span> and 
+                        <span class="highlight">machine learning</span>. I specialize in creating intelligent applications 
+                        that bridge the gap between complex data analysis and intuitive user experiences.
+                    </p>
+                    <p>
+                        I thrive in collaborative environments and am always eager to learn new technologies. When I'm not coding, 
+                        you can find me exploring new hiking trails or experimenting with new recipes in the kitchen.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Clean Code Advocate</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-palette"></i>
+                            <span>UI/UX Enthusiast</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Innovation</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Data-Driven</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="profile-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="profile-image">
+                                <img src="ybb.jpeg" alt="A photo of Yashwant Bhosle">
+                                <div class="image-border"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>
+                                    <span class="title-role" id="profile-typed-text"></span><span class="cursor-blink">|</span>
+                                </h3>
+                                <p>Building the future, one line at a time</p>
+                                <div class="social-links">
+                                    <a href="https://github.com" class="social-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/yashwant-bhosle-proxy/" class="social-link" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-number">02.</span>
+                    Skills & Technologies
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <!-- Web Development Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>React.js</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h4>Node.js</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML/CSS</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h4>Git & GitHub</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Analysis Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Data & Machine Learning</h3>
+                    </div>
+                    <div class="skill-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>SQL</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h4>Tableau</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-file-excel"></i>
+                            </div>
+                            <h4>Power BI</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>PostgreSQL</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI/ML Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Game Dev & Design</h3>
+                    </div>
+                    <div class="skill-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h4>Unity</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h4>Unreal Engine</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-shapes"></i>
+                            </div>
+                            <h4>Blender</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4>UI/UX Design</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-number">03.</span>
+                    Featured Projects
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Full Stack</button>
+                <button class="filter-btn" data-filter="data">Data Analysis</button>
+                <button class="filter-btn" data-filter="ai">Machine Learning</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Project">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Analytics Dashboard</h3>
+                        <p>Comprehensive analytics platform built with React and Node.js for analyzing e-commerce metrics, featuring real-time visualizations and predictive insights using D3.js.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                 <div class="project-card" data-category="web" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="images/batch-plus.png" alt="Batch+ Application">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <a class="project-link disabled-link" title="This was a private project for an organization">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a class="project-link disabled-link" title="Source code is private">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Batch+ | Client Project</h3>
+                            <p>A comprehensive management application developed for Ethan's Tech LLP. This tool was designed to streamline batch scheduling, track student progress, and manage course materials for the organization's internal training programs.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">JWT</span>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600" alt="Project">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Churn Prediction</h3>
+                        <p>Machine learning model to predict customer churn using advanced algorithms and feature engineering, achieving high accuracy in identifying at-risk customers.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-category="data" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Project">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>COVID-19 Data Analysis</h3>
+                        <p>Comprehensive analysis of global COVID-19 trends using statistical modeling and data visualization techniques with interactive dashboards and insights.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Jupyter</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Seaborn</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600" alt="Project">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media App</h3>
+                        <p>Real-time social media platform with live chat, post sharing, and user authentication using MERN stack and Socket.io.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600" alt="Project">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>NLP Chatbot</h3>
+                        <p>AI-powered customer service chatbot using natural language processing with BERT and integrated with multiple platforms.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">BERT</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="project-card" data-category="data" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600" alt="Project">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Stock Price Predictor</h3>
+                        <p>Machine learning model for stock price prediction using LSTM networks with historical data analysis and trend forecasting.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LSTM</span>
+                            <span class="tech-tag">Keras</span>
+                            <span class="tech-tag">Plotly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Timeline -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-number">04.</span>
+                    Experience & Journey
+                </h2>
+                <div class="section-line"></div>
+            </div>
+    <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-date">Jun 2025 - Present</div>
+            <div class="timeline-content">
+                <h3>Web & Software Developer</h3>
+                <h4>Ethan's Tech LLP | Pune</h4>
+                <p>Designed and developed responsive user interfaces and robust server-side APIs for various client projects. Focused on writing clean, scalable code and collaborated with cross-functional teams to deliver high-quality software solutions.</p>
+                <div class="timeline-tags">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>JavaScript</span>
+                    <span>API Development</span>
+                    <span>Software Development</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-date">Feb 2025 - Present</div>
+            <div class="timeline-content">
+                <h3>Data Analyst</h3>
+                <h4>NexGen Analytix | Pune</h4>
+                <p>Analyzed complex datasets to identify trends and provide actionable insights. Developed interactive dashboards using Tableau and Power BI, leading to a 20% improvement in data-driven decision-making for key stakeholders.</p>
+                <div class="timeline-tags">
+                    <span>SQL</span>
+                    <span>Python</span>
+                    <span>Tableau</span>
+                    <span>Power BI</span>
+                    <span>Data Analysis</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-number">05.</span>
+                    Get In Touch
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's create something amazing together!</h3>
+                    <p>My inbox is always open. Whether you have a question or just want to say hi, I'll get back to you!</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:xyz@gmail.com">bhosleyash18@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+1234567890">+91 9922615848</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Pune, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-connect">
+                        <h4>Connect with me</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/ProooXyyy" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yashwant-bhosle-proxy/" class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>Designed & Built with <span class="heart">❤️</span> by Yashwant Bhosle</p>
+                    <p>&copy; 2024 All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
