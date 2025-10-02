@@ -762,6 +762,7 @@ input:checked + .theme-label::after {
 section {
     padding: 100px 0;
     position: relative;
+    overflow-x: hidden;
 }
 
 .section-header {
@@ -1674,6 +1675,10 @@ section {
         flex-direction: column;
         text-align: center;
         gap: 20px;
+    }
+    .code-window {
+        transform: none;
+        animation: none;
     }
 }
 
